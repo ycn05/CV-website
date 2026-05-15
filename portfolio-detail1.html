@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Project</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    /* ==== SLIDESHOW ==== */
+    .slideshow {
+      position: relative;
+      width: 700px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(255, 255, 255, 0.15);
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      display: none;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .slides img.active {
+      display: block;
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #555;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: #00bfff;
+    }
+
+    /* ==== INFO BOX ==== */
+    .info-box {
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+      width: 320px;
+    }
+
+    .info-box h2 {
+      margin-top: 0;
+      color: #00bfff;
+    }
+
+    .info-item {
+      margin: 12px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .info-item strong {
+      color: #fff;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 25px;
+      color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="margin-left:15%;">Detail:</h1>
+
+  <div class="container">
+    <!-- Slideshow -->
+    <div class="slideshow">
+      <div class="slides">
+        <img src="img/cl1.jpeg" class="active" alt="Project Screenshot 1">
+        <img src="img/cl1p2.jpg" alt="Project Screenshot 2">
+        <img src="img/cl1p3.jpeg" alt="Project Screenshot 3">
+        <img src="img/cl1p4.jpeg" alt="Project Screenshot 4">
+      </div>
+
+      <!-- Dots (generated dynamically to match number of slides) -->
+      <div class="dots"></div>
+    </div>
+
+    <!-- Info -->
+    <div class="info-box">
+      <h2>Project Information</h2>
+      <div class="info-item"><strong>Category:</strong> Portfolio</div>
+      <div class="info-item"><strong>Client:</strong> Professeur</div>
+      <div class="info-item"><strong>Date:</strong> January 1, 2024</div>
+      <h3 class="title">Portfolio web-site</h3>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const dotsContainer = document.querySelector('.dots');
+
+    // Generate a dot for each slide so controls always match slides length
+    const dots = [];
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => showSlide(i));
+      dotsContainer.appendChild(dot);
+      dots.push(dot);
+    });
+
+    function showSlide(index) {
+      // Guard: ensure index is within range
+      if (index < 0 || index >= slides.length) return;
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    function autoSlide() {
+      let next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    setInterval(autoSlide, 4000); // change every 4 seconds
+  </script>
+
+</body>
+</html>
