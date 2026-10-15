@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lokmane Yassine</title>
+    <link rel="icon" type="image/jpeg" href="img/me.jpg">
     <link rel="stylesheet" href="fich.css">
     <script src="https://kit.fontawesome.com/cba6f6752f.js" crossorigin="anonymous"></script>
 </head>
@@ -38,49 +39,53 @@
                 <div class="about-col-2 animate-on-scroll animate-right">
                     <h1 class="sub-title">About Me</h1> 
                     <p style="font-size: 15px; color:rgb(188, 188, 188); margin-top:-5px; line-height: 1.7;">
-                        <br>I am a Full Stack web developer at the School of the Higher Institute <br>
-                        of Commercial Information Technologies and Management - (OFPPT) <br> 
-                        I am currently a student and developer in HTML/CSS/JS/PHP/Python/MySQL <br> 
-                        and also I am developer of static and dynamic websites.<br>
+                        <br>I am a Full-Stack Web Developer with a diploma in Digital Development from ISTICG Berrechid (OFPPT). <br>
+I am currently pursuing a Licence remotely at High Tech. <br>
+I specialize in Front-End and Back-End development, database management, and AI integration. <br>
+I also have basic knowledge of Artificial Intelligence and Cloud Computing. <br>
+I develop modern, static, and dynamic websites and integrate APIs with AI tools.<br>
                     </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="changer('skills')">Skills</p>
-                        <p class="tab-links" onclick="changer('experience')">Experience</p>
-                        <p class="tab-links" onclick="changer('education')">educution</p>
+                    <div class="cv-tab-switcher">
+                    <div class="tab-titles" role="tablist" aria-label="CV sections">
+                        <button type="button" class="tab-links active-link" id="tab-skills" role="tab" aria-selected="true" aria-controls="skills" tabindex="0">Skills</button>
+                        <button type="button" class="tab-links" id="tab-experience" role="tab" aria-selected="false" aria-controls="experience" tabindex="-1">Experience</button>
+                        <button type="button" class="tab-links" id="tab-education" role="tab" aria-selected="false" aria-controls="education" tabindex="-1">Education</button>
                     </div>
 
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
                         <ul class="ul">
-                            <li><span>Back End:</span><br></li> 
-                            <li>Mastery of HTML5 / CSS3 / JavaScript / Python</li>
-                            <li>Use of frameworks: Bootstrap, Tailwind CSS</li>
-                            <li>Use of JS libraries: React.js, Vue.js</li>
-                            <li>DOM manipulation and events</li>
-                            <li><span>Front-End:</span><br></li>
-                            <li>Programming in PHP, Node.js</li>
-                            <li>Use of back-end frameworks: Laravel, Express.js, React</li>
+                            <li><span>Front-End:</span></li>
+                            <li>Mastery of HTML5 / CSS3 / JavaScript</li>
+                            <li>Use of JavaScript libraries and frameworks: React.js, Vue.js</li>
+                            <li>3D web development libraries: Three.js, React Three Fiber (R3F)</li>
+                            <li><span>Back-End:</span></li>
+                            <li>Programming with PHP, Python, and Node.js</li>
+                            <li>Use of back-end frameworks: Laravel, Express.js</li>
+                            <li>REST API development and integration</li>
+                            <li>Integration of AI APIs into web applications</li>
                             <li><span>Database:</span></li>
-                            <li>Connection and database management: MySQL</li>
-                            <li><span>Other:</span></li>
-                            <li>Analysis of financial markets</li>
-                            <li>Wordpress, Exel, Power point</li>
-                            <li>Expert in the world of cryptocurrency</li>
-                            <li>vedio editings</li>
+                            <li>Database connection and management: MySQL, NoSQL, MongoDB</li>
+                            <li><span>Cloud &amp; AI:</span></li>
+                            <li>Basic knowledge of Cloud Computing</li>
+                            <li>Basic knowledge of Artificial Intelligence (AI)</li>
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="experience" role="tabpanel" aria-labelledby="tab-experience" tabindex="0" aria-hidden="true">
                         <ul class="ul">
-                            <li><span>2024 - In progress</span><br><br><div style="margin-left: 0px; color:rgb(255, 255, 255);"> Creation of static and dynamic websites in a group:</div></li>
-                            <li>Coded pages in HTML/CSS/JavaScript.</li>
-                            <li>hecked the code for errors.</li>
-                            <li>Proposed ideas to improve websites.</li>
-                            <li>Completed assigned tasks quickly and efficiently.</li>
+                            <li><span>Full-Stack Web Developer Intern</span></li>
+                            <li><strong>Injazat Projet – Berrechid, Morocco</strong></li>
+                            <li><em>February 2026 (02/02/2026 – 28/02/2026)</em></li>
+                            <li>Developed and deployed the company's official website.</li>
+                            <li>Built responsive web pages using React.js.</li>
+                            <li>Designed sections including Home, About Us, Clients, Services, Management, and Contact.</li>
+                            <li>Improved the company's online presence through a modern and professional website.</li>
+                            <li>Collaborated with the team to understand requirements and deliver an effective web solution.</li>
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="education" role="tabpanel" aria-labelledby="tab-education" tabindex="0" aria-hidden="true">
                         <ul class="ul">
                             <li><span>2020 - 2023</span><br>Field of study : BAC_physical sciences</li>
                             <li>Name of the establishment : Ibn Rochd high school</li>
@@ -93,11 +98,21 @@
                                 (analysis, algebra, thermodynamics, organics, optics, etc.), then I <br>
                                 changed the course to programming
                             </li>                            
-                            <li><span>2024 - 2025</span></li>
-                            <li>Name of the establishment : The Higher Institute of Computer Technology</li>
-                            <li>The city : Berrchid</li>
-                            <li>Field of study : Digital development</li>
+                            <li><span>2024 – 2026</span></li>
+                            <li>Name of the establishment: ISTICG Berrechid (OFPPT)</li>
+                            <li>City: Berrechid, Morocco</li>
+                            <li>Field of study: Digital Development</li>
+                            <li>Qualification: <u>Diploma in Digital Development</u></li>
+                            <li><span>2026 – Present</span></li>
+                            <li>Name of the establishment: High Tech</li>
+                            <li>Field of study: Computer Engineering (Génie Informatique)</li>
+                            <li>Degree: State-Recognized Licence</li>
+                            <li>Study mode: Distance Learning</li>
                         </ul>
+                    </div>
+                    <button type="button" class="cv-next-tab" aria-label="Go to next CV section" title="Next section">
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
                     </div>
                 </div>
             </div>
@@ -120,20 +135,20 @@
       <div class="skill-title">
         <i class="fa-brands fa-square-js" style="color: #FFD43B;  font-size:28px;"></i>
         <span>JAVASCRIPT – REACT</span>
-        <span class="percentage">75%</span>
+        <span class="percentage">80%</span>
       </div>
       <div class="skill-bar">
-        <div class="progress" style="width: 75%;"></div>
+        <div class="progress" style="width: 80%;"></div>
       </div>
     </div>
 <div class="skill-box">
       <div class="skill-title">
         <i class="fa-brands fa-php" style="color: #6c74ea; font-size:28px;"></i>
         <span>PHP - LARAVEL</span>
-        <span class="percentage">70%</span>
+        <span class="percentage">80%</span>
       </div>
       <div class="skill-bar">
-        <div class="progress" style="width: 70%;"></div>
+        <div class="progress" style="width: 80%;"></div>
       </div>
     </div>
     
@@ -145,10 +160,10 @@
       <div class="skill-title">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0288d1" d="M9.86 2A2.86 2.86 0 0 0 7 4.86v1.68h4.29c.39 0 .71.57.71.96H4.86A2.86 2.86 0 0 0 2 10.36v3.781a2.86 2.86 0 0 0 2.86 2.86h1.18v-2.68a2.85 2.85 0 0 1 2.85-2.86h5.25c1.58 0 2.86-1.271 2.86-2.851V4.86A2.86 2.86 0 0 0 14.14 2zm-.72 1.61c.4 0 .72.12.72.71s-.32.891-.72.891c-.39 0-.71-.3-.71-.89s.32-.711.71-.711"/><path fill="#fdd835" d="M17.959 7v2.68a2.85 2.85 0 0 1-2.85 2.859H9.86A2.85 2.85 0 0 0 7 15.389v3.75a2.86 2.86 0 0 0 2.86 2.86h4.28A2.86 2.86 0 0 0 17 19.14v-1.68h-4.291c-.39 0-.709-.57-.709-.96h7.14A2.86 2.86 0 0 0 22 13.64V9.86A2.86 2.86 0 0 0 19.14 7zM8.32 11.513l-.004.004l.038-.004zm6.54 7.276c.39 0 .71.3.71.89a.71.71 0 0 1-.71.71c-.4 0-.72-.12-.72-.71s.32-.89.72-.89"/></svg>
         <span>PYTHON</span>
-        <span class="percentage">70%</span>
+        <span class="percentage">50%</span>
       </div>
       <div class="skill-bar">
-        <div class="progress" style="width: 70%;"></div>
+        <div class="progress" style="width: 50%;"></div>
       </div>
     </div>
     <div class="skill-box" style="padding: 20px;">
@@ -175,7 +190,7 @@
   </div>
 </div>
 <div class="text-center">
-      <a href="file:///C:/Users/hp/Downloads/LOKMANE%20YASSINE%20%20_%20CV.pdf" download="file:///C:/Users/hp/Downloads/LOKMANE%20YASSINE%20%20_%20CV.pdf" target="_blank" id="download" class="btn btn-primary-animated" role="button" aria-label="Download my resume">
+      <a href="img/cv.pdf" download="cv.pdf" target="_blank" id="download" class="btn btn-primary-animated" role="button" aria-label="Download my resume">
         <i class="fa-solid fa-download" style="margin-right: 3px; margin-left:5px;"></i> <span data-translate-key="DOWNLOAD_RESUME" style="color: #fff; margin-left: 0px; margin-right:5px;">DOWNLOAD MAY CV</span>
       </a>
     </div>
@@ -194,7 +209,7 @@
                 you can contact me to build your personal
                 online portfolio that showcases your career
                 and helps you appear more professional.</p>
-              <a href="#">Learn more</a>
+              <a href="#contact">Learn more</a>
             </div>
             <div>
               <i class="fa-solid fa-code"></i>
@@ -202,7 +217,7 @@
                 <p style="line-height: 1.5;"> I design modern interfaces using HTML and CSS
                     to create elegant, responsive layouts
                     that adapt to all screen sizes.</p>
-                <a href="#">learn more</a>
+                <a href="#contact">learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-video"></i>
@@ -211,7 +226,7 @@
                     I focus<br> on smooth transitions, clean audio syncing,
                     and enhancing  visuals for <br>a  professional finish.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="#contact">Learn more</a>
             </div>
           </div>
         </div>
@@ -219,47 +234,66 @@
 <!---------------------------------------projet------------------------------------>
     <div id="projects">
       <div class="container">
-        <h1 class="sub-title animate-on-scroll">My Projects</h1>
+        <h1 class="sub-title animate-on-scroll">Example Projects</h1>
         <div class="project-list animate-on-scroll animate-scale">
-          <a href="portfolio-detail1.html">
+          <button type="button" class="project-card" data-title="Portfolio Web-site" data-category="Portfolio" data-description="A personal portfolio website showcasing projects and professional information." data-images="img/cl1.jpeg|img/cl1p2.jpg|img/cl1p3.jpeg|img/cl1p4.jpeg">
             <div class="project-item">
-              <img src="img/cl1.jpeg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/cl1.jpeg" class="project-image" style="margin: 0;" alt="Portfolio website preview">
               <p class="project-desc">Portfolio Web-site</p>
             </div>
-          </a>
-         <a href="portfolio-detail2.html">
+          </button>
+         <button type="button" class="project-card" data-title="Restaurant Web-site" data-category="Restaurant website" data-description="A restaurant website presenting the venue and its online experience." data-images="img/hmb1.jpg|img/hmb2.jpg|img/hmb3.jpg">
             <div class="project-item">
-              <img src="img/hmb1.jpg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/hmb1.jpg" class="project-image" style="margin: 0;" alt="Restaurant website preview">
               <p class="project-desc">Restaurant Web-site</p>
           </div>
-        </a>
-          <a href="portfolio-detail3.html">
+        </button>
+          <button type="button" class="project-card" data-title="E-commerce Web-site" data-category="E-commerce" data-description="An online shopping website for browsing products and making purchases." data-images="img/eco1.jpeg|img/eco2.jpeg|img/eco3.jpeg|img/eco4.jpeg">
             <div class="project-item">
-              <img src="img/eco1.jpeg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/eco1.jpeg" class="project-image" style="margin: 0;" alt="E-commerce website preview">
               <p class="project-desc">E-commerce Web-site</p>
             </div>
-          </a>
-          <a href="portfolio-detail4.html">
+          </button>
+          <button type="button" class="project-card" data-title="Studio Web-site" data-category="Studio website" data-description="A website presenting a studio, its services, and its work." data-images="img/std1.jpeg|img/std2.jpeg|img/std3.jpeg|img/std4.jpeg">
             <div class="project-item">
-              <img src="img/std1.jpeg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/std1.jpeg" class="project-image" style="margin: 0;" alt="Studio website preview">
               <p class="project-desc">Studio Web-site</p>
             </div>
-          </a>
-          <a href="portfolio-detail5.html">
+          </button>
+          <button type="button" class="project-card" data-title="Barber shop Web-site" data-category="Barber shop website" data-description="A barber shop website showcasing the shop and its services." data-images="img/ber1.jpeg|img/ber2.jpeg|img/ber3.jpeg|img/ber4.jpeg">
             <div class="project-item">
-              <img src="img/ber1.jpeg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/ber1.jpeg" class="project-image" style="margin: 0;" alt="Barber shop website preview">
               <p class="project-desc">Barber shop Web-site</p>
             </div>
-          </a>
-          <a href="portfolio-detail6.html">
+          </button>
+          <button type="button" class="project-card" data-title="Event Web-site" data-category="Event website" data-description="An event website presenting event information and experiences." data-images="img/ev1.jpeg|img/ev2.jpeg|img/ev3.jpeg">
             <div class="project-item">
-              <img src="img/ev1.jpeg" class="project-image" style="margin: 0;" onclick="toggleImage(this)">
+              <img src="img/ev1.jpeg" class="project-image" style="margin: 0;" alt="Event website preview">
               <p class="project-desc">Event Web-site</p>
             </div>
-          </a>
+          </button>
         </div>
       </div>
     </div>    
+    <dialog class="project-modal" id="project-modal" aria-labelledby="project-modal-title">
+      <div class="project-modal-panel">
+        <button type="button" class="project-modal-close" aria-label="Close project details">&times;</button>
+        <div class="project-modal-content">
+          <div class="project-modal-gallery">
+            <img id="project-modal-image" src="" alt="">
+            <button type="button" class="project-modal-arrow project-modal-previous" aria-label="Previous image">&lsaquo;</button>
+            <button type="button" class="project-modal-arrow project-modal-next" aria-label="Next image">&rsaquo;</button>
+            <div class="project-modal-dots" id="project-modal-dots" aria-label="Project images"></div>
+          </div>
+          <div class="project-modal-info">
+            <p class="project-modal-eyebrow">Project Information</p>
+            <h2 id="project-modal-title"></h2>
+            <p><strong>Category:</strong> <span id="project-modal-category"></span></p>
+            <p id="project-modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
 <!---------------------------------------contact----------------------------------->
   <div id="contact">
    <div class="container">
@@ -277,7 +311,7 @@
           <a href="https://www.linkedin.com/in/yassine-lokmane-095702362/"><i class="fab fa-linkedin"></i></a>
           <a href=""><i class="fab fa-github-square"></i></a>
         </div>
-        <a href="file:///C:/Users/hp/Downloads/LOKMANE%20YASSINE%20%20_%20CV.pdf" download="LOKMANE-YASSINE-CV.pdf" target="_blank" class="btn" data-translate-key="DOWNLOAD_RESUME" style="color: black;">Download CV</a>
+        <a href="img/cv.pdf" download="cv.pdf" target="_blank" class="btn" data-translate-key="DOWNLOAD_RESUME" style="color: black;">Download CV</a>
         
       </div>
       <div class="contact-right">
@@ -304,19 +338,50 @@
   // Set the current year automatically
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-    <script> 
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function changer(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+    <script>
+      const cvTabs = Array.from(document.querySelectorAll('[role="tab"]'));
+      const cvPanels = cvTabs.map((tab) => document.getElementById(tab.getAttribute("aria-controls")));
+
+      function activateCvTab(activeTab, moveFocus = false) {
+        cvTabs.forEach((tab, index) => {
+          const isActive = tab === activeTab;
+          tab.classList.toggle("active-link", isActive);
+          tab.setAttribute("aria-selected", String(isActive));
+          tab.tabIndex = isActive ? 0 : -1;
+          cvPanels[index].classList.toggle("active-tab", isActive);
+          cvPanels[index].setAttribute("aria-hidden", String(!isActive));
+        });
+
+        if (moveFocus) activeTab.focus();
+      }
+
+      cvTabs.forEach((tab) => {
+        tab.addEventListener("click", () => activateCvTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          const currentIndex = cvTabs.indexOf(tab);
+          let nextIndex;
+
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            nextIndex = (currentIndex + 1) % cvTabs.length;
+          } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            nextIndex = (currentIndex - 1 + cvTabs.length) % cvTabs.length;
+          } else if (event.key === "Home") {
+            nextIndex = 0;
+          } else if (event.key === "End") {
+            nextIndex = cvTabs.length - 1;
+          } else {
+            return;
+          }
+
+          event.preventDefault();
+          activateCvTab(cvTabs[nextIndex], true);
+        });
+      });
+
+      document.querySelector(".cv-next-tab").addEventListener("click", () => {
+        const activeIndex = cvTabs.findIndex((tab) => tab.getAttribute("aria-selected") === "true");
+        activateCvTab(cvTabs[(activeIndex + 1) % cvTabs.length]);
+      });
     </script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
@@ -369,6 +434,75 @@
         });
       });
     </script> 
+    <script>
+      const projectModal = document.getElementById("project-modal");
+      const modalImage = document.getElementById("project-modal-image");
+      const modalDots = document.getElementById("project-modal-dots");
+      const projectCards = document.querySelectorAll(".project-card");
+      let activeProjectImages = [];
+      let activeProjectImageIndex = 0;
+
+      function showProjectImage(index) {
+        if (index < 0 || index >= activeProjectImages.length) return;
+
+        activeProjectImageIndex = index;
+        modalImage.src = activeProjectImages[index];
+        modalImage.alt = `${projectModal.dataset.projectTitle} screenshot ${index + 1}`;
+        modalDots.querySelectorAll(".project-modal-dot").forEach((dot, dotIndex) => {
+          dot.setAttribute("aria-current", String(dotIndex === index));
+        });
+      }
+
+      projectCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const { title, category, description, images } = card.dataset;
+          activeProjectImages = images.split("|");
+          projectModal.dataset.projectTitle = title;
+          document.getElementById("project-modal-title").textContent = title;
+          document.getElementById("project-modal-category").textContent = category;
+          document.getElementById("project-modal-description").textContent = description;
+          modalDots.replaceChildren();
+
+          activeProjectImages.forEach((_, index) => {
+            const dot = document.createElement("button");
+            dot.type = "button";
+            dot.className = "project-modal-dot";
+            dot.setAttribute("aria-label", `Show image ${index + 1}`);
+            dot.addEventListener("click", () => showProjectImage(index));
+            modalDots.appendChild(dot);
+          });
+
+          showProjectImage(0);
+          projectModal.showModal();
+          document.body.classList.add("project-modal-open");
+        });
+      });
+
+      document.querySelector(".project-modal-close").addEventListener("click", () => {
+        projectModal.close();
+      });
+
+      document.querySelector(".project-modal-previous").addEventListener("click", () => {
+        const previousIndex = (activeProjectImageIndex - 1 + activeProjectImages.length) % activeProjectImages.length;
+        showProjectImage(previousIndex);
+      });
+
+      document.querySelector(".project-modal-next").addEventListener("click", () => {
+        const nextIndex = (activeProjectImageIndex + 1) % activeProjectImages.length;
+        showProjectImage(nextIndex);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && projectModal.open) {
+          event.preventDefault();
+          projectModal.close();
+        }
+      });
+
+      projectModal.addEventListener("close", () => {
+        document.body.classList.remove("project-modal-open");
+      });
+    </script>
 
 </body>
 </html>
