@@ -218,14 +218,21 @@ span{
 .cv-tab-switcher{
     position: relative;
 }
+.cv-tab-content-row{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 58px;
+    gap: 16px;
+    align-items: center;
+}
+.cv-tab-panels{
+    min-width: 0;
+}
 .cv-next-tab{
-    position: absolute;
-    top: 55%;
-    right: -78px;
     display: grid;
     width: 58px;
     height: 58px;
     place-items: center;
+    justify-self: end;
     border: 2px solid #fff;
     border-radius: 50%;
     background: transparent;
@@ -365,15 +372,15 @@ span{
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 14px 15px;
-  font-size: 18px;
-  color: #dfdfdf;
-  background: linear-gradient(45deg, #007bff, #0056b3);
-  border: 2px solid transparent;
-  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 17px;
+  color: #fff;
+  background: var(--my-color);
+  border: 4px solid #006bb3;
+  border-radius: 14px;
   text-decoration: none;
   transition: background 0.3s, transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 8px 15px rgba(0, 91, 187, 0.3);
+  box-shadow: none;
   position: relative;
   overflow: hidden;
 }
@@ -396,8 +403,8 @@ span{
 }
 
 .btn-primary-animated:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 91, 187, 0.5);
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 107, 179, 0.45);
 }
 
 .btn-primary-animated fa-solid fa-download {
@@ -409,35 +416,33 @@ span{
 
 .btn-primary-animated:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 4px rgba(0, 107, 179, 0.5);
 }
 
 .btn-primary-animated:active {
-  background: linear-gradient(45deg, #0056b3, #00408f);
+  background: #4cad0b;
   transform: scale(0.98);
 }
 /*-----------------------------------------*/
 
 .skills-wrapper {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 500px));
+  justify-content: center;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  gap: 52px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .skills-column {
-  width: 48%;
   min-width: 0;
 }
 
 .skill-box {
-
-  padding: 10px 20px;
-  margin-bottom: 23px;
-  margin-top: 30px;
+  padding: 10px 0;
+  margin-bottom: 21px;
+  margin-top: 20px;
 }
 
 .skill-title {
@@ -447,20 +452,33 @@ span{
   font-weight: bold;
   margin-bottom: 8px;
   gap: 12px;
-  flex-wrap: wrap;
-
+  min-height: 30px;
 }
 
 .skill-title i {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #333;
+  width: 30px;
+  margin-right: 0;
+  font-size: 24px;
   flex-shrink: 0;
 }
 
+.skill-title svg {
+  width: 30px;
+  flex: 0 0 30px;
+}
+
+.skill-title > span:not(.percentage) {
+  flex: 1;
+  color: var(--my-color);
+  text-align: center;
+  white-space: nowrap;
+}
+
 .percentage {
+  min-width: 40px;
   flex-shrink: 0;
   color: #ffffff;
+  text-align: right;
 }
 
 .skill-bar {
@@ -476,6 +494,12 @@ span{
   height: 100%;
   background-color: #007bff;
   border-radius: 4px;
+}
+
+@media (min-width: 769px) {
+  .skills-wrapper {
+    padding: 0;
+  }
 }
 
 
@@ -667,14 +691,18 @@ nav .fas{
       font-size: 16px;
     }
     .cv-next-tab{
-      position: static;
       width: 48px;
       height: 48px;
-      margin: 20px 0 0 auto;
       font-size: 21px;
     }
+    .cv-tab-content-row{
+      grid-template-columns: minmax(0, 1fr) 48px;
+      gap: 10px;
+    }
     .skills-wrapper{
+      grid-template-columns: minmax(0, 1fr);
       gap: 12px;
+      width: 100%;
     }
     .skill-box{
       padding: 10px 0;
